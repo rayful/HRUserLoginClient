@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "923458f439f8234a477c578258cb505e",
+    "packages": [
+        {
+            "name": "rayful/object-tool",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rayful/ObjectTool.git",
+                "reference": "286f6d159f6141a1691ea4aecdee9ac9cb61748b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/rayful/ObjectTool/286f6d159f6141a1691ea4aecdee9ac9cb61748b.zip",
+                "reference": "286f6d159f6141a1691ea4aecdee9ac9cb61748b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rayful\\Tool\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kingmax",
+                    "email": "a@xiyanghui.com"
+                }
+            ],
+            "description": "A object relative toolkit.",
+            "time": "2017-09-23T14:35:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

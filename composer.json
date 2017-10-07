@@ -1,0 +1,19 @@
+{
+    "name": "rayful/hr-login-client",
+    "description": "A client tool for other system to login use HR users.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kingmax",
+            "email": "a@xiyanghui.com"
+        }
+    ],
+    "require": {
+        "rayful/object-tool": "^1.0"
+    },
+    "autoload": {
+    "psr-4": {
+        "rayful\\Tool\\HR\\": "src/"
+    }
+}
+}
