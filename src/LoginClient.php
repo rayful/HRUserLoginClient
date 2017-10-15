@@ -35,7 +35,11 @@ class LoginClient
             $user->set($json->user);
             return $user;
         }else{
-            throw new LoginException($json->msg, $json->code);
+            if($json->msg){
+                throw new LoginException($json->msg, $json->code);
+            }else{
+                throw new LoginException("无任何返回，可能是网络异常，或请求地址缺失（请确认你已经构造了登录根地址）。");
+            }
         }
     }
 }
