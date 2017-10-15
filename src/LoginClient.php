@@ -24,11 +24,15 @@ class LoginClient
 
     public function tryGetUser($username, $password)
     {
-        $URL = $this->root . "?" . http_build_query([
-                'username' => $username,
-                'password' => $password,
-            ]);
-        $text = file_get_contents($URL);
+        if (filter_var($this->root, FILTER_VALIDATE_URL)) {
+            $path = $this->root . "?" . http_build_query([
+                    'username' => $username,
+                    'password' => $password,
+                ]);
+        } else {
+            $path = $this->root;
+        }
+        $text = file_get_contents($path);
         $json = json_decode($text);
         if ($json->result) {
             $user = new User();
